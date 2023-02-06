@@ -1,10 +1,14 @@
 /* responsive template setting */
 @media only screen and (max-width: 990px) {
     .title{
+        font-size: 25px;
         text-align: center;
     }
+    p, h2, h3, h5, h6, h4{
+        font-size: medium;
+    }
     .navbar .title{
-        font-size: 20px;
+        font-size: larger;
         padding: 20px 0 0 15px;
     }
     .getintouch-form{
@@ -43,6 +47,9 @@
     }
     .doc-info{
         text-align: center;
+    }
+    .doc-info h1, .doc-info h3, .doc-info p{
+        font-size: medium;
     }
     .footer-bottom #copyright{
         display: flex;
