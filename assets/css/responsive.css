@@ -1,0 +1,66 @@
+/* responsive template setting */
+@media only screen and (max-width: 990px) {
+    .title{
+        text-align: center;
+    }
+    .navbar .title{
+        font-size: 20px;
+        padding: 20px 0 0 15px;
+    }
+    .getintouch-form{
+        width: 70%;
+        height: 70%;
+        bottom: 0;
+    }
+    .getintouch img{
+        display: none;
+    }
+    .carousel-1, .carousel-2, .carousel-3{
+        background-size: contain;
+        height: 280px;
+    }
+    .carousel-1 p, .carousel-2 p, .carousel-3 p{
+        font-size: 25px;
+    }
+    .carousel-1 .col-12{
+        margin-top: 5%;
+        height: 150px;
+    }
+    .carousel-1 .col-12 p{
+        margin: auto;
+        padding: 50px 0 50px 0;
+    }
+    .carousel-2 .col-6 p{
+        margin: auto;
+        padding: 50px 5px 50px 5px;
+    }
+    .carousel-3 .col-6 p{
+        margin: auto;
+        padding: 50px 0 50px 0;
+    }
+    .meet-ur-doc{
+        width: 80%;
+    }
+    .doc-info{
+        text-align: center;
+    }
+    .footer-bottom #copyright{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-bottom #copyright span, p{
+        padding: 20px 0 0 10px;
+        color: black;
+        font-weight: 600;
+    }
+    
+    .footer-bottom #contact{
+        display: block;
+        justify-content: center;
+    }
+    
+    .footer-bottom #contact span, p{
+        color: black;
+        font-weight: 600;
+    }
+}

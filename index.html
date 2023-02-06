@@ -14,8 +14,16 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://kit.fontawesome.com/bc33f4558c.css" crossorigin="anonymous">
 
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css">
+
+    
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
 
 </head>
 
@@ -23,38 +31,32 @@
 
       <!-- Navbar Start -->
       <section id="home">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: rgb(0,6,92);
-          background: linear-gradient(90deg, rgba(0,6,92,1) 0%, rgba(46,150,222,1) 82%, rgba(55,189,224,1) 100%);">
-              <div class="container-fluid">
-                <!-- <div class="nav-item">
-                </div> -->
-                <div class="brand">
-                  <img id="logo" src="assets/images/logo.png" alt="">
-                  <div class="title">
-                    <a class="nav-link" href="/">शेंडे फिजिओथेरपी क्लिनिक</a>
-                    <!-- <a id="tagline" class="nav-link" href="#">शास्त्रोक्त व्यायाम व फिजिओथेरपी</a> -->
-                  </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link btn btn-outline-light" href="#location"><span class="material-symbols-outlined">call</span>Call Now</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#location">Our Location</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="brand">
+            <img id="logo" src="assets/images/logo.png" alt="">
+            <div class="title">
+              <a class="nav-link" href="/">शेंडे फिजिओथेरपी क्लिनिक</a>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-light" href="#contact-no"><span class="material-symbols-outlined">call</span>Call Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Our Location</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </section>
       <!-- Navbar End -->
@@ -122,43 +124,39 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div id="carousel" style="background: url('assets/images/banner1.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%;">
-              <div class="row" style="height: 540px;">
-                <div class="col-12" style="margin: auto;">
+            <div class="carousel-1">
+              <div class="row">
+                <div class="col-12">
                   <p>शास्त्रोक्त व्यायाम व फिजिओथेरपी<br>
-                  <a href="#location" class="btn btn-primary" style="font-weight:600; font-size: 20px;">Book Appointment Today</a></p>
+                  <a href="#location" class="btn btn-primary">Book Appointment Today</a></p>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div id="carousel" style="background: url('assets/images/banner2.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%;">
-              <div class="row" style="height: 540px;">
+            <div class="carousel-2">
+              <div class="row">
                 <div class="col-6">
                   <p>Tired of Neck Pain or Back Pain?<br>
-                  <a href="#location" class="btn btn-primary" style="font-size: 20px; text-decoration: none; color: white; cursor: pointer; font-weight: 600;">Visit Today</a></p>
+                  <a href="#location" class="btn btn-primary">Visit Today</a></p>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div id="carousel" style="background: url('assets/images/banner3.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%;">
-              <div class="row" style="height: 540px;">
+            <div class="carousel-3">
+              <div class="row">
                 <div class="col-6">
                   <p>Suffering from post operative pains<br>
-                    <a href="#getintouch" class="btn btn-primary" style="font-size: 20px; text-decoration: none; color: white; cursor: pointer; font-weight: 600;">Ask Our Doctor!</a></p>
+                    <a href="#getintouch" class="btn btn-primary">Ask Our Doctor!</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span> -->
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span> -->
         </button>
       </div>
       <!-- carousel end -->
@@ -197,87 +195,84 @@
 
       <!-- Services Carousel start -->
       <section id="services">
-        <div class="container-fluid">
+        <div class="services swiper mySwiper">
           <h1>Services</h1>
-          <p>Comprehensive therapy services</p>
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card-wrapper">
-                  <div class="card">
-                    <img src="assets/images/services/neckpain.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">मानदुखी</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="assets/images/services/back_pain.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">कंबरदुखी</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="assets/images/services/spinal_pain.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">मणक्याचे विकार</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="assets/images/services/post_op.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">सांधेदुखी/झीज/सूज</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>            
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card-wrapper">
-                  <div class="card">
-                    <img src="assets/images/services/tingling-in-limbs.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">हातापायाला मुंग्या येणे व ताकद जाणे</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="assets/images/services/joint_pain.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">शस्त्रक्रियेनंतरचे फिजिओथेरपी उपचार</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="assets/images/services/paralysis.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">पेरालिसीस</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="assets/images/services/sportsinjuries.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">स्पोर्ट्स इंज्युरीज</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+          <h3>Comprehensive therapy services</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/neckpain.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">मानदुखी</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="material-symbols-outlined">
-                arrow_back_ios
-                </span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="material-symbols-outlined">
-                arrow_forward_ios
-                </span>
-            </button>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/back_pain.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">कंबरदुखी</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/spinal_pain.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">मणक्याचे विकार</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/post_op.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">सांधेदुखी/झीज/सूज</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>  
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/tingling-in-limbs.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">हातापायाला मुंग्या येणे व ताकद जाणे</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/joint_pain.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">शस्त्रक्रियेनंतरचे फिजिओथेरपी उपचार</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/paralysis.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">पेरालिसीस</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/images/services/sportsinjuries.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">स्पोर्ट्स इंज्युरीज</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <!-- Services Carousel end -->    
@@ -292,12 +287,12 @@
                 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Shende Physiotherapy&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
               </div>
             </div>
-            <div class="col-md-4 contact-info">
+            <div id="contact-no" class="col-md-4 contact-info">
               <h1>Book Your Appointment Today</h1>
               <br>
               <h4>Conveniently located very close to Maruti Mandir, Malnaka and Main city highway.</h4>
               <h4>Book your appointment now by calling <br><br>
-                <span>+91 8669353362</span></h4>
+                <span>+91 1111-2222-77</span></h4>
             </div>
           </div>
         </div>
@@ -408,9 +403,6 @@
       <div class="container-fluid">
         <footer>
           <div class="text-bg-light p-3">
-            <!-- <div class="title">
-              <h3>SECTION</h3>
-            </div> -->
             <div class="footer-items">
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#about">About</a>
@@ -420,13 +412,13 @@
             </div>
             <hr>
             <div class="footer-bottom row">
-              <div id="contact" class="col-md-6">
+              <div id="contact" class="col-md-6 col-12">
                 <span class="material-symbols-outlined">mail</span>
                 <p>physiotherapist@testing.com</p>
                 <span class="material-symbols-outlined">call</span>
                 <p>+91 1111-2222-33</p>
               </div>
-              <div id="copyright" class="col-md-6">
+              <div id="copyright" class="col-md-6 col-12">
                 <img id="logo" src="assets/images/logo.png" alt="">
                 <span class="material-symbols-outlined">copyright</span>
                 <p>SHENDE PHYSIOTHERAPY CLINIC</p>
@@ -445,7 +437,9 @@
       <script src="assets/js/main.js"></script>
       <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 
+      <!-- Swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
+      <script src="assets/js/swiper.js"></script>
       
-
 </body>
 </html>
