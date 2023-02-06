@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/bc33f4558c.css" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+      <!-- Navbar Start -->
+      <section id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: rgb(0,6,92);
+          background: linear-gradient(90deg, rgba(0,6,92,1) 0%, rgba(46,150,222,1) 82%, rgba(55,189,224,1) 100%);">
+              <div class="container-fluid">
+                <!-- <div class="nav-item">
+                </div> -->
+                <div class="brand">
+                  <img id="logo" src="assets/images/logo.png" alt="">
+                  <div class="title">
+                    <a class="nav-link" href="/">शेंडे फिजिओथेरपी क्लिनिक</a>
+                    <!-- <a id="tagline" class="nav-link" href="#">शास्त्रोक्त व्यायाम व फिजिओथेरपी</a> -->
+                  </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-light" href="#location"><span class="material-symbols-outlined">call</span>Call Now</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#location">Our Location</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+      </section>
+      <!-- Navbar End -->
+
+      <!-- Get in touch popup -->
+      <div id="getintouch-form" class="getintouch-form">
+        <div class="row">
+          <div class="col-10">
+            <h3>Get In Touch</h3>
+          </div>
+          <div class="col-2">
+            <span class="material-symbols-outlined" onclick="closeForm()">close</span>
+          </div>
+        </div>
+        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwVuFEe5YqhlFgtZfm5vOZhjouIFqh5mQr0_eku_BkqSxhLKnXTb3vUxgPoxndP5ybblg/exec">
+
+          <!-- Thank you message -->
+          <div style="display:none" class="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below -->
+            <h5><em>Thanks</em> for contacting us! We will get back to you soon!
+            </h5>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Full Name"> 
+            </div>
+
+            <div class="col-6">
+              <label for="exampleFormControlInput1" class="form-label">City</label>
+              <input name="city" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your City">
+            </div>
+          </div>
+
+          <div>
+            <label for="exampleFormControlInput1" class="form-label mt-1">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+
+          <div>
+            <label for="exampleFormControlInput1" class="form-label mt-1">Mobile Number</label>
+            <input name="contact no." type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Mobile Number">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label mt-1">Message</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div style="text-align: center;">
+          <input type="submit" class="btn btn-success" value="Submit">
+          </div>
+
+        </form>
+      </div>
+      <!-- Get in touch button -->
+      <div id="getintouch-btn" class="form-display" onclick="openForm()" ><span class="material-symbols-outlined">mail</span>Get in Touch</div>
+
+      <!-- carousel start -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="carousel" style="background: url('assets/images/banner1.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%;">
+              <div class="row" style="height: 540px;">
+                <div class="col-12" style="margin: auto;">
+                  <p>शास्त्रोक्त व्यायाम व फिजिओथेरपी<br>
+                  <a href="#location" class="btn btn-primary" style="font-weight:600; font-size: 20px;">Book Appointment Today</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="carousel" style="background: url('assets/images/banner2.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%;">
+              <div class="row" style="height: 540px;">
+                <div class="col-6">
+                  <p>Tired of Neck Pain or Back Pain?<br>
+                  <a href="#location" class="btn btn-primary" style="font-size: 20px; text-decoration: none; color: white; cursor: pointer; font-weight: 600;">Visit Today</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="carousel" style="background: url('assets/images/banner3.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%;">
+              <div class="row" style="height: 540px;">
+                <div class="col-6">
+                  <p>Suffering from post operative pains<br>
+                    <a href="#getintouch" class="btn btn-primary" style="font-size: 20px; text-decoration: none; color: white; cursor: pointer; font-weight: 600;">Ask Our Doctor!</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+      <!-- carousel end -->
+
+      <!-- About Us start-->
+      <section id="about">
+        <div class="about">
+          <div class="row">
+            <h1 class="title">About Us</h1>
+            <div class="col-md-8 about-us-info">
+              <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facilis ut minus molestias beatae aut, perspiciatis repellat vero numquam quaerat cupiditate eveniet. Maxime facere ut illo quos vitae temporibus qua. lorIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
+              </h5>
+            </div>
+            <div class="col-md-4 about-us-img">
+              <img src="assets/images/clinic_1.jpg" alt="">
+            </div>  
+            <hr class="mt-5 mb-5">
+            <div class="col-12">
+              <div class="meet-ur-doc">
+                <h1>Meet Your Doctor</h1>
+              </div>
+            </div>
+            <div class="col-md-6 doc-img">
+              <img src="assets/images/doctor.jpg" alt="">
+            </div>
+            <div class="col-md-6 doc-info">
+              <h1>डॉ स्वाती अजय शेंडे</h1>
+              <h3>फिजिओथेरपिस्ट</h3>
+              <h3>BPT,MPT (MSK AND MANUAL THERAPY)</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae, placeat dicta, quo suscipit excepturi debitis non reiciendis vitae molestiae iste animi eos quidem quos, commodi culpa ipsa consequatur. Molestiae labore eaque praesentium cum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us end -->
+
+      <!-- Services Carousel start -->
+      <section id="services">
+        <div class="container-fluid">
+          <h1>Services</h1>
+          <p>Comprehensive therapy services</p>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <img src="assets/images/services/neckpain.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">मानदुखी</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/images/services/back_pain.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">कंबरदुखी</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/images/services/spinal_pain.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">मणक्याचे विकार</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/images/services/post_op.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">सांधेदुखी/झीज/सूज</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>            
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <img src="assets/images/services/tingling-in-limbs.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">हातापायाला मुंग्या येणे व ताकद जाणे</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/images/services/joint_pain.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">शस्त्रक्रियेनंतरचे फिजिओथेरपी उपचार</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/images/services/paralysis.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">पेरालिसीस</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="assets/images/services/sportsinjuries.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">स्पोर्ट्स इंज्युरीज</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Services Carousel end -->    
+
+      <!--location start-->
+      <section id="location">
+        <div class="location">
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="title">Our Location</h1>
+              <div class="mapouter">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Shende Physiotherapy&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+              </div>
+            </div>
+            <div class="col-md-4 contact-info">
+              <h1>Book Your Appointment Today</h1>
+              <br>
+              <h4>Conveniently located very close to Maruti Mandir, Malnaka and Main city highway.</h4>
+              <h4>Book your appointment now by calling <br><br>
+                <span>+91 8669353362</span></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- location end -->
+      
+      <!-- Client Testimony -->
+      <section id="client">
+        <div class="text-bg" style="background: #e1ebec; ">
+
+        <h1 class="title p-4" style="text-align: center;">Client Testimonials</h1>
+
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row">
+                  <div class="col-12">
+                    <p>Dr. Swati treated me for my knee and foot pain and soon after the treatment i became better and was able to resumemy daily activities.. she handles patients nicely and ethically.. she is a skilled and compassionate physiotherapist..</p>
+                    <p>- Dr. Amit Bhasme</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <div class="row">
+                  <div class="col-12">
+                    <p>Swati is a very jolly person to talk with first of all and I was there for shoulder pain. She has given me excercise and also takes sessions very nicely. Definately recommended.</p>
+                    <p>- Jinal Chheda</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <div class="row">
+                  <div class="col-12">
+                    <p>Till now I have come across too many physios because of my profession as a professional footballer. The way she took care of the finest small assessment details was superb, great experience will definitely recommend it to others :)</p>
+                    <p>- pruthviraj kale</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span> -->
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Client Testimony end -->
+      
+      <!-- Get In Touch start -->
+      <section id="getintouch">
+        <div class="getintouch">
+          <div class="row">
+            <h1 class="title">Get In Touch</h1>
+            <div class="col-md-8 form">
+              <div>
+                <h6>Do you have any concerns or questions regarding our physiotherapy services? Please do not hesitate to get in touch by calling +91 8669353362 or fill out our contact form below. We are happy to answer any queries.</h6>
+              </div>
+              <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwVuFEe5YqhlFgtZfm5vOZhjouIFqh5mQr0_eku_BkqSxhLKnXTb3vUxgPoxndP5ybblg/exec">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Full Name">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">City</label>
+                  <input name="city" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your City">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
+                  <input name="contact no." type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                  <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div style="text-align: center;">
+                <input type="submit" class="btn btn-success" value="Submit">
+                </div>
+                <!-- Thank you message -->
+                <div style="display:none" class="thankyou_message">
+                  <!-- You can customize the thankyou message by editing the code below -->
+                  <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                  </h2>
+                </div>
+              </form> 
+            </div>
+            <div class="col-md-4 img">
+              <img src="assets/images/getintouch.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section> 
+      <!-- Get In Touch end -->
+
+      <!-- Go to Top -->
+      <div id="go-to-top" class="go-to-top">
+        <a href="#home"><span class="material-symbols-outlined">arrow_upward</span></a>
+      </div>
+      
+      <!-- footer start -->
+      <div class="container-fluid">
+        <footer>
+          <div class="text-bg-light p-3">
+            <!-- <div class="title">
+              <h3>SECTION</h3>
+            </div> -->
+            <div class="footer-items">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#getintouch">FAQ</a>
+              <a class="nav-link" href="#location">Location</a>
+            </div>
+            <hr>
+            <div class="footer-bottom row">
+              <div id="contact" class="col-md-6">
+                <span class="material-symbols-outlined">mail</span>
+                <p>physiotherapist@testing.com</p>
+                <span class="material-symbols-outlined">call</span>
+                <p>+91 1111-2222-33</p>
+              </div>
+              <div id="copyright" class="col-md-6">
+                <img id="logo" src="assets/images/logo.png" alt="">
+                <span class="material-symbols-outlined">copyright</span>
+                <p>SHENDE PHYSIOTHERAPY CLINIC</p>
+              </div>
+            </div>
+          </div>
+  
+        </footer>
+      </div>
+      
+      <!-- footer end -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      
+      <!-- getintouch form pop -->
+      <script src="assets/js/main.js"></script>
+      <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
+
+      
+
+</body>
+</html>
