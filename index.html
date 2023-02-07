@@ -33,7 +33,7 @@
       <section id="home">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="brand">
-            <img id="logo" src="assets/images/logo.png" alt="">
+            <a href="/"><img id="logo" src="assets/images/logo.png" alt=""></a>
             <div class="title">
               <a class="nav-link" href="/">शेंडे फिजिओथेरपी क्लिनिक</a>
             </div>
@@ -113,52 +113,36 @@
         </form>
       </div>
       <!-- Get in touch button -->
-      <div id="getintouch-btn" class="form-display" onclick="openForm()" ><span class="material-symbols-outlined">mail</span>Get in Touch</div>
+      <div id="getintouch-btn" class="form-display-btn" onclick="openForm()" ><span class="material-symbols-outlined">mail</span>Get in Touch</div>
 
       <!-- carousel start -->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <section id="home-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>शास्त्रोक्त व्यायाम व फिजिओथेरपी</p>
+                <a href="#contact-no" class="btn btn-primary">Book Appointment Today</a>
+            </div>
+            <div  class="carousel-item">
+                <p>Tired of Neck Pain or Back Pain?</p>
+                <a href="#location" class="btn btn-primary">Visit Today</a>
+            </div>
+            <div class="carousel-item">
+                <p>Suffering from post operative pains?</p>
+                <a href="#getintouch" class="btn btn-primary">Ask Our Doctor!</a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-1">
-              <div class="row">
-                <div class="col-12">
-                  <p>शास्त्रोक्त व्यायाम व फिजिओथेरपी<br>
-                  <a href="#location" class="btn btn-primary">Book Appointment Today</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-2">
-              <div class="row">
-                <div class="col-6">
-                  <p>Tired of Neck Pain or Back Pain?<br>
-                  <a href="#location" class="btn btn-primary">Visit Today</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-3">
-              <div class="row">
-                <div class="col-6">
-                  <p>Suffering from post operative pains<br>
-                    <a href="#getintouch" class="btn btn-primary">Ask Our Doctor!</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        </button>
-      </div>
+      </section>
       <!-- carousel end -->
 
       <!-- About Us start-->
