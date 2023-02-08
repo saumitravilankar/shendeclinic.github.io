@@ -70,7 +70,7 @@ input{
     text-align: center;
     font-size: 57px;
     width: 100%;
-    padding: 100px 30px 100px 20px;
+    padding: 100px 30px 100px 30px;
 }
 
 /* about section */
@@ -162,30 +162,6 @@ input{
     background: rgb(0,6,92,0.7);
     color: white;
 }
-
-/* banner zoom effect */
-@-webkit-keyframes zoom {
-    from {
-    	-webkit-transform: scale(1,1);
-    }
-    to {
-    	-webkit-transform: scale(1.5,1.5);
-    }
-}
-/* Standard syntax */
-@keyframes zoom {
-   from {
-        transform: scale(1,1);
-   }
-   to {
-        transform: scale(1.5,1.5);
-   }
-}
-#crsl-1 img {
-    -webkit-animation: zoom 30s; /* Chrome, Safari, Opera */
-    animation: zoom 30s;
-}
-
 
 /* location section */
 .location {
@@ -370,11 +346,8 @@ footer .title h3{
     text-align: left;
     height: 100%;
     padding: 30px;
+    text-align: center;
 }
-.services h1{
-    padding-left: 10px;
-}
-
 .card-wrapper{
     display: flex;
 }
