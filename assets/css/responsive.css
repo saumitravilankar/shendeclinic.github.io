@@ -27,6 +27,10 @@
         padding: 30px 20px 10px 20px;
         height: 22vh;
     }
+    #home-carousel .carousel-item p{
+        font-size: 20px;
+        font-weight: 400;
+    }
     #home-carousel .carousel-item a{
         padding: 5px;
         margin-top: -50px;
